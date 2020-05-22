@@ -23,7 +23,7 @@ Funcionalidade: Busca de produtos
       | produto           |
       | panela de pressão |
       | colher de madeira |
-    
+
    Cenario: Validar preco filtrado
      Quando pesquiso pelo produto <produto>
      E clico na lupa
