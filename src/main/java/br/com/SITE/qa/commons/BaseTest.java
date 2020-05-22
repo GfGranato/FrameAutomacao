@@ -8,13 +8,12 @@ public class BaseTest {
 
     protected static WebDriver webDriver;
     protected static WebDriverWait webWait;
-    protected static String devsName, devsEmail, devsPassword;
 
     protected void initializeWebApplication(WebApplication webApplication) {
         webDriver = webApplication.getDriver();
         webDriver.manage().window().maximize();
 
-        webDriver.get(PropertiesManager.getPropertiesValue("URL_aplication"));
+        webDriver.get(PropertiesManager.getPropertiesValue("URL_application"));
         webWait = new WebDriverWait(webDriver, 80);
     }
 

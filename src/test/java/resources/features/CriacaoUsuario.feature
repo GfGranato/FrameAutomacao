@@ -7,14 +7,13 @@ Funcionalidade: Criar novo usuario
 
   Contexto: Acessar tela de cadastro
     Dado que acesso o SITE
-    Quando clico no Link Crie a sua conta
-    Entao sou redirecionado para a tela de registro
+    E clico no Link Crie a sua conta
 
-    Cenario: Realizar Cadastro com sucesso
-      Dado que acesso o SITE
-      E clico no Link Crie a sua conta
-      Quando preencho os dados corretamente
-      Entao sou cadastrado no SITE com sucesso
+  Cenario: Checar Recaptcha passando informacoes validas
+    Dado que acesso o SITE
+    E clico no Link Crie a sua conta
+    Quando preencho os dados corretamente
+    Entao a mensagem "Marque a caixa de verificação" abaixo do recaptcha
 
   Cenario: Realizar Cadastro enviando caracteres especiais
     Dado que acesso o SITE
