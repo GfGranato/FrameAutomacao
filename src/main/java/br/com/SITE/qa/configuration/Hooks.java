@@ -7,12 +7,7 @@ import cucumber.api.java.Before;
 public class Hooks extends BaseTest {
     @Before(value = "@srbarrigaWeb")
     public void beforeSrBarrigaWeb() {
-        initializeWebApplication(Web.CHROME_WINDOWS, true);
-    }
-
-    @Before(value = "@4devsWeb")
-    public void beforeDevsWeb() {
-        initializeWebApplication(Web.CHROME_WINDOWS, false);
+        initializeWebApplication(Web.CHROME_WINDOWS);
     }
 
     @After(value = "@srbarrigaWeb")
@@ -20,8 +15,4 @@ public class Hooks extends BaseTest {
         closeWeb();
     }
 
-    @After(value = "@4devsWeb")
-    public void afterDevsWeb() {
-        closeWeb();
-    }
 }

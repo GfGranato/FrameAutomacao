@@ -10,15 +10,11 @@ public class BaseTest {
     protected static WebDriverWait webWait;
     protected static String devsName, devsEmail, devsPassword;
 
-    protected void initializeWebApplication(WebApplication webApplication, boolean trueFalse) {
+    protected void initializeWebApplication(WebApplication webApplication) {
         webDriver = webApplication.getDriver();
         webDriver.manage().window().maximize();
-        if(trueFalse) {
-        webDriver.get(PropertiesManager.getPropertiesValue("URL_SRBARRIGA"));
-        }
-        else if (!trueFalse) {
-            webDriver.get(PropertiesManager.getPropertiesValue("URL_4DEVS"));
-        }
+
+        webDriver.get(PropertiesManager.getPropertiesValue("URL_aplication"));
         webWait = new WebDriverWait(webDriver, 80);
     }
 
