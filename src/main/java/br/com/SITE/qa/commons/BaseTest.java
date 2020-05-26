@@ -12,7 +12,6 @@ public class BaseTest {
     protected void initializeWebApplication(WebApplication webApplication) {
         webDriver = webApplication.getDriver();
         webDriver.manage().window().maximize();
-
         webDriver.get(PropertiesManager.getPropertiesValue("URL_application"));
         webWait = new WebDriverWait(webDriver, 80);
     }

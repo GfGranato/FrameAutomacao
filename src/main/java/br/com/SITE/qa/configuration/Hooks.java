@@ -5,13 +5,13 @@ import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
 public class Hooks extends BaseTest {
-    @Before(value = "@srbarrigaWeb")
-    public void beforeSrBarrigaWeb() {
+    @Before(value = "@mercadoLivreWeb")
+    public void beforeMercadoLivre() {
         initializeWebApplication(Web.CHROME_WINDOWS);
     }
 
-    @After(value = "@srbarrigaWeb")
-    public void afterSrBarrigaWeb() {
+    @After(value = "@mercadoLivreWeb")
+    public void afterMercadoLivre() {
         closeWeb();
     }
 
