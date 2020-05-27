@@ -9,24 +9,24 @@ Funcionalidade: Busca de produtos
   Contexto: Acessar tela de produtos
     Dado que acesso o site
 
-  @pesquisaProdutos
+  @mercadoLivreWeb @pesquisaProdutos
   Cenario: Pesquisar produto
     Dado que pesquiso pelo produto <produto>
     E clico na lupa
     E sou redirecionado para a tela de produtos
     Entao visualizo o <produto> listado na tela
 
-    Esquema do Cenario: Pesquisar produto para cozinha
-      Dado que pesquiso pelo produto <produto>
-      E clico na lupa
-      E sou redirecionado para a tela de produtos
-      Entao visualizo o <produto> listado na tela
-      Exemplos:
-        | produto           |
-        | panela de pressao |
-        | colher de madeira |
+  Esquema do Cenario: Pesquisar produto para cozinha
+    Dado que pesquiso pelo produto <produto>
+    E clico na lupa
+    E sou redirecionado para a tela de produtos
+    Entao visualizo o <produto> listado na tela
+    Exemplos:
+      | produto           |
+      | panela de pressao |
+      | colher de madeira |
 
-  @validarPreco
+  @mercadoLivreWeb @validarPreco
   Cenario: Validar preco filtrado
      Dado pesquiso pelo produto <produto>
      E clico na lupa de pesquisa

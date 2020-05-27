@@ -1,4 +1,5 @@
 #language: pt
+#encoding: UTF-8
 
 Funcionalidade: Busca de produtos
   Como usuario do SITE
@@ -6,9 +7,9 @@ Funcionalidade: Busca de produtos
   Para que eu possa realizar compras
 
   Contexto: Acessar tela de produtos
-    Dado que acesso o SITE
+    Dado que acesso o site
 
-  @pesquisaProdutos
+  @mercadoLivreWeb @pesquisaProdutos
   Cenario: Pesquisar produto
     Dado que pesquiso pelo produto <produto>
     E clico na lupa
@@ -22,10 +23,10 @@ Funcionalidade: Busca de produtos
     Entao visualizo o <produto> listado na tela
     Exemplos:
       | produto           |
-      | panela de pressão |
+      | panela de pressao |
       | colher de madeira |
 
-  @validarPreco
+  @mercadoLivreWeb @validarPreco
   Cenario: Validar preco filtrado
      Dado pesquiso pelo produto <produto>
      E clico na lupa de pesquisa
