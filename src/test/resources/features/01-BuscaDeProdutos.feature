@@ -1,4 +1,5 @@
 #language: pt
+#encoding: UTF-8
 
 Funcionalidade: Busca de produtos
   Como usuario do SITE
@@ -6,7 +7,7 @@ Funcionalidade: Busca de produtos
   Para que eu possa realizar compras
 
   Contexto: Acessar tela de produtos
-    Dado que acesso o SITE
+    Dado que acesso o site
 
   @pesquisaProdutos
   Cenario: Pesquisar produto
@@ -15,15 +16,15 @@ Funcionalidade: Busca de produtos
     E sou redirecionado para a tela de produtos
     Entao visualizo o <produto> listado na tela
 
-  Esquema do Cenario: Pesquisar produto para cozinha
-    Dado que pesquiso pelo produto <produto>
-    E clico na lupa
-    E sou redirecionado para a tela de produtos
-    Entao visualizo o <produto> listado na tela
-    Exemplos:
-      | produto           |
-      | panela de pressão |
-      | colher de madeira |
+    Esquema do Cenario: Pesquisar produto para cozinha
+      Dado que pesquiso pelo produto <produto>
+      E clico na lupa
+      E sou redirecionado para a tela de produtos
+      Entao visualizo o <produto> listado na tela
+      Exemplos:
+        | produto           |
+        | panela de pressao |
+        | colher de madeira |
 
   @validarPreco
   Cenario: Validar preco filtrado
