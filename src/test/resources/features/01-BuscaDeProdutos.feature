@@ -1,6 +1,6 @@
 #language: pt
 #encoding: UTF-8
-
+#nomeacao errada #ausencia de Quando
 Funcionalidade: Busca de produtos
   Como usuario do SITE
   Gostaria de realizar busca de produtos

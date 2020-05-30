@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(monochrome = true, snippets = SnippetType.CAMELCASE, plugin = {"pretty", "json:target/cucumber.json"},
         features = {".//src//test//resources//features" },
         glue = {"br.com.SITE.qa.webSteps", "br.com.SITE.qa.configuration"}, tags = {}
-)
+) //explicar em documentacao essa classe
 public class RunTest {
 
     @BeforeClass
