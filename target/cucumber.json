@@ -4,16 +4,12 @@
       {
         "line": 1,
         "value": "#language: pt"
-      },
-      {
-        "line": 2,
-        "value": "#encoding: UTF-8"
       }
     ],
-    "line": 4,
+    "line": 3,
     "elements": [
       {
-        "line": 9,
+        "line": 8,
         "name": "Acessar tela de produtos",
         "description": "",
         "type": "background",
@@ -21,113 +17,432 @@
         "steps": [
           {
             "result": {
-              "duration": 359208600,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 10,
-            "name": "que acesso o site",
-            "match": {
-              "location": "CommonWebSteps.queAcessoOSite()"
-            },
+            "line": 9,
+            "name": "que acesso o SITE",
+            "match": {},
             "keyword": "Dado "
           }
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 9883777300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.beforeMercadoLivre()"
-            }
-          }
-        ],
-        "line": 13,
+        "line": 11,
         "name": "Pesquisar produto",
         "description": "",
         "id": "busca-de-produtos;pesquisar-produto",
-        "after": [
-          {
-            "result": {
-              "duration": 924222600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.afterMercadoLivre()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Cenario",
         "steps": [
           {
             "result": {
-              "duration": 17337000,
-              "status": "passed"
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "pesquiso pelo produto \u003cproduto\u003e",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "clico na lupa",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
             "line": 14,
-            "name": "que pesquiso pelo produto \u003cproduto\u003e",
-            "match": {
-              "location": "BuscaDeProdutosWebWebSteps.quePesquisoPeloProdutoProduto()"
-            },
-            "keyword": "Dado "
+            "name": "sou redirecionado para a tela de produtos",
+            "match": {},
+            "keyword": "Entao "
           },
           {
             "result": {
-              "duration": 19600,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 15,
-            "name": "clico na lupa",
-            "match": {
-              "location": "BuscaDeProdutosWebWebSteps.clicoNaLupa()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 27800,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "sou redirecionado para a tela de produtos",
-            "match": {
-              "location": "BuscaDeProdutosWebWebSteps.souRedirecionadoParaATelaDeProdutos()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 18400,
-              "status": "passed"
-            },
-            "line": 17,
             "name": "visualizo o \u003cproduto\u003e listado na tela",
-            "match": {
-              "location": "BuscaDeProdutosWebWebSteps.visualizoOProdutoListadoNaTela()"
-            },
-            "keyword": "Entao "
+            "match": {},
+            "keyword": "E "
           }
-        ],
-        "tags": [
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Acessar tela de produtos",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
           {
-            "line": 12,
-            "name": "@mercadoLivreWeb"
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "que acesso o SITE",
+            "match": {},
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Pesquisar produto para cozinha",
+        "description": "",
+        "id": "busca-de-produtos;pesquisar-produto-para-cozinha;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "pesquiso pelo produto panela de pressão",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Quando "
           },
           {
-            "line": 12,
-            "name": "@pesquisaProdutos"
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "clico na lupa",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "sou redirecionado para a tela de produtos",
+            "match": {},
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "visualizo o panela de pressão listado na tela",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Acessar tela de produtos",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "que acesso o SITE",
+            "match": {},
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Pesquisar produto para cozinha",
+        "description": "",
+        "id": "busca-de-produtos;pesquisar-produto-para-cozinha;;3",
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "pesquiso pelo produto colher de madeira",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "clico na lupa",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "sou redirecionado para a tela de produtos",
+            "match": {},
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "visualizo o colher de madeira listado na tela",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Acessar tela de produtos",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "que acesso o SITE",
+            "match": {},
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "Validar preco filtrado",
+        "description": "",
+        "id": "busca-de-produtos;validar-preco-filtrado",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "pesquiso pelo produto \u003cproduto\u003e",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "clico na lupa",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "filtro o preco para ...",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "vizualiso apenas precos no intervalo selecionado",
+            "match": {},
+            "keyword": "Entao "
           }
         ]
       }
     ],
     "name": "Busca de produtos",
-    "description": "Como usuario do SITE\nGostaria de realizar busca de produtos\nPara que eu possa realizar compras",
+    "description": "Como usuario do SITE\r\nGostaria de realizar busca de produtos\r\nPara que eu possa realizar compras",
     "id": "busca-de-produtos",
     "keyword": "Funcionalidade",
-    "uri": "01-BuscaDeProdutos.feature"
+    "uri": "BuscaDeProdutos.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Acessar tela de cadastro",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "que acesso o SITE",
+            "match": {},
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "clico no Link Crie a sua conta",
+            "match": {},
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Checar Recaptcha passando informacoes validas",
+        "description": "",
+        "id": "criar-novo-usuario;checar-recaptcha-passando-informacoes-validas",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "que acesso o SITE",
+            "match": {},
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "clico no Link Crie a sua conta",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "preencho os dados corretamente",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "a mensagem \"Marque a caixa de verificação\" abaixo do recaptcha",
+            "match": {},
+            "keyword": "Entao "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Acessar tela de cadastro",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "que acesso o SITE",
+            "match": {},
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "clico no Link Crie a sua conta",
+            "match": {},
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Realizar Cadastro enviando caracteres especiais",
+        "description": "",
+        "id": "criar-novo-usuario;realizar-cadastro-enviando-caracteres-especiais",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "que acesso o SITE",
+            "match": {},
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "clico no Link Crie a sua conta",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "preencho os dados incorretamente",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "sou visualizo as mensagens de erro",
+            "match": {},
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "Criar novo usuario",
+    "description": "Como usuario do SITE\r\nGostaria de criar um novo usuario\r\nPara que eu possa realizar compras",
+    "id": "criar-novo-usuario",
+    "keyword": "Funcionalidade",
+    "uri": "CriacaoUsuario.feature"
   }
 ]
