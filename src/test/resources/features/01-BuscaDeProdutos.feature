@@ -1,6 +1,5 @@
 #language: pt
 #encoding: UTF-8
-#nomeacao errada #ausencia de Quando
 Funcionalidade: Busca de produtos
   Como usuario do SITE
   Gostaria de realizar busca de produtos
@@ -11,15 +10,13 @@ Funcionalidade: Busca de produtos
 
   @mercadoLivreWeb @pesquisaProdutos
   Cenario: Pesquisar produto
-    Dado que pesquiso pelo produto <produto>
-    E clico na lupa
-    E sou redirecionado para a tela de produtos
-    Entao visualizo o <produto> listado na tela
+    E pesquiso pelo produto PAO DOCE
+    Quando clico na lupa
+    Entao visualizo o PAO DOCE listado na tela
 
   Esquema do Cenario: Pesquisar produto para cozinha
-    Dado que pesquiso pelo produto <produto>
+    E pesquiso pelo produto <produto>
     E clico na lupa
-    E sou redirecionado para a tela de produtos
     Entao visualizo o <produto> listado na tela
     Exemplos:
       | produto           |
@@ -28,7 +25,7 @@ Funcionalidade: Busca de produtos
 
   @mercadoLivreWeb @validarPreco
   Cenario: Validar preco filtrado
-     Dado pesquiso pelo produto <produto>
-     E clico na lupa de pesquisa
-     E filtro o preco o preco com alguma das opcoes
+     E pesquiso pelo produto Uno Mile
+     Quando clico na lupa
+     E filtro o preco com uma das opcoes
      Entao vizualiso apenas os precos no intervalo selecionado

@@ -13,8 +13,8 @@ public class BuscaDeProdutosWebWebSteps extends BuscaDeProdutosWebFuncionalidade
     }
 
     //Pesquisar produto
-    @Dado("^que pesquiso pelo produto <produto>$")
-    public void quePesquisoPeloProdutoProduto() {
+    @Dado("^pesquiso pelo produto (.*)$")
+    public void pesquisoPeloProdutoProduto(String produto) {
     }
 
     @E("^clico na lupa$")
@@ -25,28 +25,17 @@ public class BuscaDeProdutosWebWebSteps extends BuscaDeProdutosWebFuncionalidade
     public void souRedirecionadoParaATelaDeProdutos() {
     }
 
-    @Entao("^visualizo o <produto> listado na tela$")
-    public void visualizoOProdutoListadoNaTela() {
+    @Entao("^visualizo o (.*) listado na tela$")
+    public void visualizoOProdutoListadoNaTela(String produto1) {
 
     }
 
-    //Validar preco filtrado
-    @Dado("^pesquiso pelo produto <produto>$")
-    public void pesquisoPeloProdutoProduto() {
-    }
-
-    @E("^clico na lupa de pesquisa$")
-    public void clicoNaLupaDePesquisa() {
-
-    }
-
-    @E("^filtro o preco o preco com alguma das opcoes$")
-    public void filtroOPrecoOPrecoComAlgumaDasOpcoes() {
-
-
+    @E("^filtro o preco com uma das opcoes$")
+    public void filtroOPrecoComUmaDasOpcoes() {
     }
 
     @Entao("^vizualiso apenas os precos no intervalo selecionado$")
     public void vizualisoApenasOsPrecosNoIntervaloSelecionado() {
     }
+
 }

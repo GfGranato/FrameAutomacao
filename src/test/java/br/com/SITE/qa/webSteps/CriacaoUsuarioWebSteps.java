@@ -5,6 +5,8 @@ import cucumber.api.PendingException;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Entao;
+import cucumber.api.java.pt.Quando;
+import org.omg.PortableServer.THREAD_POLICY_ID;
 
 public class CriacaoUsuarioWebSteps extends CriacaoUsuarioWebFuncionalidade {
     private CriacaoUsuarioWebFuncionalidade criacaoUsuarioWebFuncionalidade;
@@ -14,7 +16,7 @@ public class CriacaoUsuarioWebSteps extends CriacaoUsuarioWebFuncionalidade {
     }
 
     //Cenario: Checar Recaptcha passando informacoes validas
-    @Dado("^que preencho os campos com informacoes validas$")
+    @Quando("^que preencho os campos com informacoes validas$")
     public void quePreenchoOsCamposComInformacoesValidas() {
     }
 
@@ -23,7 +25,7 @@ public class CriacaoUsuarioWebSteps extends CriacaoUsuarioWebFuncionalidade {
     }
 
     //Cenario: Realizar um cadastro enviando caracteres especiais
-    @Dado("^que preencho os dados incorretamente$")
+    @Quando("^que preencho os dados incorretamente$")
     public void quePreenchoOsDadosIncorretamente() {
     }
 
