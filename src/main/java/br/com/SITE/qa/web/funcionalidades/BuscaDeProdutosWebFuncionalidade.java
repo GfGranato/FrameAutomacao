@@ -7,6 +7,7 @@ public class BuscaDeProdutosWebFuncionalidade extends BaseTest {
     private BuscaDeProdutosWebPage buscaDeProdutosWebPage;
 
     public BuscaDeProdutosWebFuncionalidade() {
+        super(webDriver);
         buscaDeProdutosWebPage = new BuscaDeProdutosWebPage(webDriver);
     }
 

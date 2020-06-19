@@ -12,6 +12,7 @@ Funcionalidade: Criar novo usuario
   @mercadoLivreWeb @checarRecaptcha
   Cenario: Checar Recaptcha passando informacoes validas
     Quando que preencho os campos com informacoes validas
+    E aperto o botao Continuar
     Entao visualizo a mensagem "Marque a caixa de verificação" abaixo do recaptcha
 
   @mercadoLivreWeb @caracteresEspeciais

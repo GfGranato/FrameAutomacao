@@ -21,7 +21,7 @@
         "steps": [
           {
             "result": {
-              "duration": 237372900,
+              "duration": 341714500,
               "status": "passed"
             },
             "line": 9,
@@ -33,7 +33,7 @@
           },
           {
             "result": {
-              "duration": 1477409800,
+              "duration": 942778000,
               "status": "passed"
             },
             "line": 10,
@@ -49,7 +49,7 @@
         "before": [
           {
             "result": {
-              "duration": 9340831900,
+              "duration": 9858395300,
               "status": "passed"
             },
             "match": {
@@ -64,7 +64,7 @@
         "after": [
           {
             "result": {
-              "duration": 822324700,
+              "duration": 1533705900,
               "status": "passed"
             },
             "match": {
@@ -77,7 +77,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10017469300,
+              "duration": 6997106400,
               "status": "passed"
             },
             "line": 14,
@@ -89,10 +89,22 @@
           },
           {
             "result": {
-              "duration": 2825500,
+              "duration": 1340966600,
               "status": "passed"
             },
             "line": 15,
+            "name": "aperto o botao Continuar",
+            "match": {
+              "location": "CriacaoUsuarioWebSteps.apertoOBotaoContinuar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 3988500,
+              "status": "passed"
+            },
+            "line": 16,
             "name": "visualizo a mensagem \"Marque a caixa de verificação\" abaixo do recaptcha",
             "match": {
               "arguments": [
@@ -119,7 +131,7 @@
       }
     ],
     "name": "Criar novo usuario",
-    "description": "Como usuario do SITE\nGostaria de criar um novo usuario\nPara que eu possa realizar compras",
+    "description": "Como usuario do SITE\r\nGostaria de criar um novo usuario\r\nPara que eu possa realizar compras",
     "id": "criar-novo-usuario",
     "keyword": "Funcionalidade",
     "uri": "00-CriacaoUsuario.feature"

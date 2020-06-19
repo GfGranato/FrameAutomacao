@@ -8,6 +8,7 @@ public class CommonWebFuncionalidade extends BaseTest {
     private CommonWebPage commonWebPage;
 
     public CommonWebFuncionalidade() {
+        super(webDriver);
         commonWebPage = new CommonWebPage(webDriver);
     }
 

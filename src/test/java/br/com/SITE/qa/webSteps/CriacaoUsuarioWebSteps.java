@@ -18,10 +18,14 @@ public class CriacaoUsuarioWebSteps extends CriacaoUsuarioWebFuncionalidade {
     //Cenario: Checar Recaptcha passando informacoes validas
     @Quando("^que preencho os campos com informacoes validas$")
     public void quePreenchoOsCamposComInformacoesValidas() {
+        criacaoUsuarioWebFuncionalidade.preencheNomeESobrenome();
+        criacaoUsuarioWebFuncionalidade.preencheCampoEmail();
+        criacaoUsuarioWebFuncionalidade.preencheCampoSenha();
     }
 
     @Entao("^visualizo a mensagem \"([^\"]*)\" abaixo do recaptcha$")
     public void visualizoAMensagemAbaixoDoRecaptcha(String msg0) {
+
     }
 
     //Cenario: Realizar um cadastro enviando caracteres especiais
@@ -31,5 +35,10 @@ public class CriacaoUsuarioWebSteps extends CriacaoUsuarioWebFuncionalidade {
 
     @Entao("^visualizo as mensagens de erro$")
     public void visualizoAsMensagensDeErro() {
+    }
+
+    @E("^aperto o botao Continuar$")
+    public void apertoOBotaoContinuar() {
+        criacaoUsuarioWebFuncionalidade.clicaBtnContinuar();
     }
 }
