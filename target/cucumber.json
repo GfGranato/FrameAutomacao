@@ -10,10 +10,10 @@
         "value": "#encoding: UTF-8"
       }
     ],
-    "line": 3,
+    "line": 4,
     "elements": [
       {
-        "line": 8,
+        "line": 9,
         "name": "Acessar tela de cadastro",
         "description": "",
         "type": "background",
@@ -21,10 +21,10 @@
         "steps": [
           {
             "result": {
-              "duration": 341714500,
+              "duration": 260323700,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "que acesso o site",
             "match": {
               "location": "CommonWebSteps.queAcessoOSite()"
@@ -33,10 +33,10 @@
           },
           {
             "result": {
-              "duration": 942778000,
+              "duration": 2633619000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "clico no link Crie a sua conta",
             "match": {
               "location": "CommonWebSteps.clicoNoLinkCrieASuaConta()"
@@ -49,7 +49,7 @@
         "before": [
           {
             "result": {
-              "duration": 9858395300,
+              "duration": 10153052500,
               "status": "passed"
             },
             "match": {
@@ -57,14 +57,14 @@
             }
           }
         ],
-        "line": 13,
-        "name": "Checar Recaptcha passando informacoes validas",
+        "line": 14,
+        "name": "Checar mensagem CPF invalido",
         "description": "",
-        "id": "criar-novo-usuario;checar-recaptcha-passando-informacoes-validas",
+        "id": "criar-novo-usuario;checar-mensagem-cpf-invalido",
         "after": [
           {
             "result": {
-              "duration": 1533705900,
+              "duration": 895067700,
               "status": "passed"
             },
             "match": {
@@ -77,11 +77,11 @@
         "steps": [
           {
             "result": {
-              "duration": 6997106400,
+              "duration": 5524853600,
               "status": "passed"
             },
-            "line": 14,
-            "name": "que preencho os campos com informacoes validas",
+            "line": 15,
+            "name": "que preencho os campos com CPF invalido",
             "match": {
               "location": "CriacaoUsuarioWebSteps.quePreenchoOsCamposComInformacoesValidas()"
             },
@@ -89,10 +89,10 @@
           },
           {
             "result": {
-              "duration": 1340966600,
+              "duration": 143947500,
               "status": "passed"
             },
-            "line": 15,
+            "line": 16,
             "name": "aperto o botao Continuar",
             "match": {
               "location": "CriacaoUsuarioWebSteps.apertoOBotaoContinuar()"
@@ -101,31 +101,145 @@
           },
           {
             "result": {
-              "duration": 3988500,
-              "status": "passed"
+              "duration": 40099393300,
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator \u0027By.xpath: //span[.\u003d\u0027O dígito verificador não é válido.\u0027]\u0027 (tried for 20 second(s) with 500 milliseconds interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat br.com.SITE.qa.commons.BaseTest.waitForElementToBeVisible(BaseTest.java:35)\r\n\tat br.com.SITE.qa.web.funcionalidades.CriacaoUsuarioWebFuncionalidade.isMensagemCpfInvalidoDisplayed(CriacaoUsuarioWebFuncionalidade.java:44)\r\n\tat br.com.SITE.qa.webSteps.CriacaoUsuarioWebSteps.visualizoAMensagem(CriacaoUsuarioWebSteps.java:34)\r\n\tat ✽.Entao visualizo a mensagem O dígito verificador não é válido.(00-CriacaoUsuario.feature:17)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[.\u003d\u0027O dígito verificador não é válido.\u0027]\"}\n  (Session info: chrome\u003d83.0.4103.116)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NOTE_14KS9R2\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\GUILHE~1.GRA\\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55276}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: d4a25c43a7db49617f4f083ce1588c68\n*** Element info: {Using\u003dxpath, value\u003d//span[.\u003d\u0027O dígito verificador não é válido.\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)\r\n\tat br.com.SITE.qa.commons.BaseTest.waitForElementToBeVisible(BaseTest.java:35)\r\n\tat br.com.SITE.qa.web.funcionalidades.CriacaoUsuarioWebFuncionalidade.isMensagemCpfInvalidoDisplayed(CriacaoUsuarioWebFuncionalidade.java:44)\r\n\tat br.com.SITE.qa.webSteps.CriacaoUsuarioWebSteps.visualizoAMensagem(CriacaoUsuarioWebSteps.java:34)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)\r\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "status": "failed"
             },
-            "line": 16,
-            "name": "visualizo a mensagem \"Marque a caixa de verificação\" abaixo do recaptcha",
+            "line": 17,
+            "name": "visualizo a mensagem O dígito verificador não é válido.",
             "match": {
               "arguments": [
                 {
-                  "val": "Marque a caixa de verificação",
-                  "offset": 22
+                  "val": "O dígito verificador não é válido.",
+                  "offset": 21
                 }
               ],
-              "location": "CriacaoUsuarioWebSteps.visualizoAMensagemAbaixoDoRecaptcha(String)"
+              "location": "CriacaoUsuarioWebSteps.visualizoAMensagem(String)"
             },
             "keyword": "Entao "
           }
         ],
         "tags": [
           {
-            "line": 12,
+            "line": 13,
+            "name": "@mercadoLivreWeb"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Acessar tela de cadastro",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 12554400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que acesso o site",
+            "match": {
+              "location": "CommonWebSteps.queAcessoOSite()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1881527000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clico no link Crie a sua conta",
+            "match": {
+              "location": "CommonWebSteps.clicoNoLinkCrieASuaConta()"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7465672000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeMercadoLivre()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Checar mensagem Recaptcha",
+        "description": "",
+        "id": "criar-novo-usuario;checar-mensagem-recaptcha",
+        "after": [
+          {
+            "result": {
+              "duration": 911453500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterMercadoLivre()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4753425700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "que preencho os campos com CPF invalido",
+            "match": {
+              "location": "CriacaoUsuarioWebSteps.quePreenchoOsCamposComInformacoesValidas()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 141980900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "aperto o botao Continuar",
+            "match": {
+              "location": "CriacaoUsuarioWebSteps.apertoOBotaoContinuar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 88275300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "visualizo mensagem do Rcaptcha Marque a caixa de verificação",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Marque a caixa de verificação",
+                  "offset": 31
+                }
+              ],
+              "location": "CriacaoUsuarioWebSteps.visualizoMensagemRecaptcha(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
             "name": "@mercadoLivreWeb"
           },
           {
-            "line": 12,
-            "name": "@checarRecaptcha"
+            "line": 19,
+            "name": "@FalhaNoSegundoAssert"
           }
         ]
       }
@@ -135,5 +249,429 @@
     "id": "criar-novo-usuario",
     "keyword": "Funcionalidade",
     "uri": "00-CriacaoUsuario.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      },
+      {
+        "line": 2,
+        "value": "#encoding: UTF-8"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Acessar tela de produtos",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 65757000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que acesso o site",
+            "match": {
+              "location": "CommonWebSteps.queAcessoOSite()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7130458000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeMercadoLivre()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Pesquisar produto",
+        "description": "",
+        "id": "busca-de-produtos;pesquisar-produto",
+        "after": [
+          {
+            "result": {
+              "duration": 1021753400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterMercadoLivre()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1869328400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "pesquiso pelo produto Cadeira Gamer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cadeira Gamer",
+                  "offset": 22
+                }
+              ],
+              "location": "BuscaDeProdutosWebWebSteps.pesquisoPeloProdutoProduto(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 20092464300,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(ArrayList.java:657)\r\n\tat java.util.ArrayList.get(ArrayList.java:433)\r\n\tat br.com.SITE.qa.web.funcionalidades.BuscaDeProdutosWebFuncionalidade.isProdutosListadosNaTela(BuscaDeProdutosWebFuncionalidade.java:25)\r\n\tat br.com.SITE.qa.webSteps.BuscaDeProdutosWebWebSteps.visualizoOProdutoListadoNaTela(BuscaDeProdutosWebWebSteps.java:30)\r\n\tat ✽.Entao visualizo o Cadeira Gamer POO listado na tela(01-BuscaDeProdutos.feature:14)\r\n",
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "visualizo o Cadeira Gamer POO listado na tela",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cadeira Gamer POO",
+                  "offset": 12
+                }
+              ],
+              "location": "BuscaDeProdutosWebWebSteps.visualizoOProdutoListadoNaTela(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@mercadoLivreWeb"
+          },
+          {
+            "line": 11,
+            "name": "@pesquisaProdutos"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Acessar tela de produtos",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 36706400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que acesso o site",
+            "match": {
+              "location": "CommonWebSteps.queAcessoOSite()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9433969200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeMercadoLivre()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Pesquisar produto para cozinha",
+        "description": "",
+        "id": "busca-de-produtos;pesquisar-produto-para-cozinha;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1078327000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterMercadoLivre()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4820449300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "pesquiso pelo produto Panela De Pressao",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Panela De Pressao",
+                  "offset": 22
+                }
+              ],
+              "location": "BuscaDeProdutosWebWebSteps.pesquisoPeloProdutoProduto(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 20082665300,
+              "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(ArrayList.java:657)\r\n\tat java.util.ArrayList.get(ArrayList.java:433)\r\n\tat br.com.SITE.qa.web.funcionalidades.BuscaDeProdutosWebFuncionalidade.isProdutosListadosNaTela(BuscaDeProdutosWebFuncionalidade.java:25)\r\n\tat br.com.SITE.qa.webSteps.BuscaDeProdutosWebWebSteps.visualizoOProdutoListadoNaTela(BuscaDeProdutosWebWebSteps.java:30)\r\n\tat ✽.Entao visualizo o Panela De Pressao listado na tela(01-BuscaDeProdutos.feature:19)\r\n",
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "visualizo o Panela De Pressao listado na tela",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Panela De Pressao",
+                  "offset": 12
+                }
+              ],
+              "location": "BuscaDeProdutosWebWebSteps.visualizoOProdutoListadoNaTela(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@mercadoLivreWeb"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Acessar tela de produtos",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 13442900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que acesso o site",
+            "match": {
+              "location": "CommonWebSteps.queAcessoOSite()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9276222200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeMercadoLivre()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Pesquisar produto para cozinha",
+        "description": "",
+        "id": "busca-de-produtos;pesquisar-produto-para-cozinha;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1268698400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterMercadoLivre()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2478908500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "pesquiso pelo produto Panela De Pressão",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Panela De Pressão",
+                  "offset": 22
+                }
+              ],
+              "location": "BuscaDeProdutosWebWebSteps.pesquisoPeloProdutoProduto(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 2172155100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "visualizo o Panela De Pressão listado na tela",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Panela De Pressão",
+                  "offset": 12
+                }
+              ],
+              "location": "BuscaDeProdutosWebWebSteps.visualizoOProdutoListadoNaTela(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@mercadoLivreWeb"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Acessar tela de produtos",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 14582500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que acesso o site",
+            "match": {
+              "location": "CommonWebSteps.queAcessoOSite()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8268689000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeMercadoLivre()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Pesquisar produto para cozinha",
+        "description": "",
+        "id": "busca-de-produtos;pesquisar-produto-para-cozinha;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1077246000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterMercadoLivre()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3198447700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "pesquiso pelo produto Colher De Pau",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Colher De Pau",
+                  "offset": 22
+                }
+              ],
+              "location": "BuscaDeProdutosWebWebSteps.pesquisoPeloProdutoProduto(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 813757800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "visualizo o Colher De Pau listado na tela",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Colher De Pau",
+                  "offset": 12
+                }
+              ],
+              "location": "BuscaDeProdutosWebWebSteps.visualizoOProdutoListadoNaTela(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@mercadoLivreWeb"
+          }
+        ]
+      }
+    ],
+    "name": "Busca de produtos",
+    "description": "Como usuario do SITE\r\nGostaria de realizar busca de produtos\r\nPara que eu possa realizar compras",
+    "id": "busca-de-produtos",
+    "keyword": "Funcionalidade",
+    "uri": "01-BuscaDeProdutos.feature"
   }
 ]

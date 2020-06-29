@@ -17,7 +17,7 @@ public class BaseTest {
     public BaseTest(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.webDriver = driver;
-        this.webDriver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+        this.webDriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
     }
 
@@ -28,7 +28,7 @@ public class BaseTest {
         webDriver = webApplication.getDriver();
         webDriver.manage().window().maximize();
         webDriver.get(PropertiesManager.getPropertiesValue("URL_application"));
-        webWait = new WebDriverWait(webDriver, 80);
+        webWait = new WebDriverWait(webDriver, 20);
     }
 
     public void waitForElementToBeVisible(WebElement element) {

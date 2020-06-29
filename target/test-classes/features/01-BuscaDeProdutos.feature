@@ -10,22 +10,21 @@ Funcionalidade: Busca de produtos
 
   @mercadoLivreWeb @pesquisaProdutos
   Cenario: Pesquisar produto
-    E pesquiso pelo produto PAO DOCE
-    Quando clico na lupa
-    Entao visualizo o PAO DOCE listado na tela
+    Quando pesquiso pelo produto Cadeira Gamer
+    Entao visualizo o Cadeira Gamer POO listado na tela
 
+  @mercadoLivreWeb
   Esquema do Cenario: Pesquisar produto para cozinha
-    E pesquiso pelo produto <produto>
-    E clico na lupa
+    Quando pesquiso pelo produto <produto>
     Entao visualizo o <produto> listado na tela
     Exemplos:
       | produto           |
-      | panela de pressao |
-      | colher de madeira |
+      | Panela De Pressao |
+      | Panela De Pressão |
+      | Colher De Pau     |
 
-  @mercadoLivreWeb @validarPreco
+  @mercadoLivreWeb @validarPreco @dontRun
   Cenario: Validar preco filtrado
-     E pesquiso pelo produto Uno Mile
-     Quando clico na lupa
+     Quando pesquiso pelo produto Uno Mile
      E filtro o preco com uma das opcoes
      Entao vizualiso apenas os precos no intervalo selecionado
